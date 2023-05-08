@@ -1,3 +1,8 @@
+#2022-09805-MN-0
+#RAGAAS, ANDREA 
+#BSCPE 1-5
+#
+
 #creating the functions
 #the function to add two numbers
 def add(x, y):
@@ -52,8 +57,9 @@ while True:
         # exit if the answer is no
         try_again = input("Let's do next calculation? (yes/no): ")
         if try_again == "no":
-          break
-
-#display thank you message
+            #display thank you message
+            print("Thank You!")
+            break
+          
     else:
-        print("Thank You!")
+        print("Invalid Input")
