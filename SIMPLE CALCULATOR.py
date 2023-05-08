@@ -6,3 +6,7 @@ def add(x, y):
 #the function to subtract two numbers
 def add(x, y):
     return x - y
+
+#the function to multiply two numbers
+def add(x, y):
+    return x * y
