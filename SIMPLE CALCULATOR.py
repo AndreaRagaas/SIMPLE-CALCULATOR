@@ -53,3 +53,7 @@ while True:
         try_again = input("Let's do next calculation? (yes/no): ")
         if try_again == "no":
           break
+
+#display thank you message
+    else:
+        print("Thank You!")
