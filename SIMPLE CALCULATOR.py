@@ -4,15 +4,15 @@ def add(x, y):
     return x + y
 
 #the function to subtract two numbers
-def add(x, y):
+def subtract(x, y):
     return x - y
 
 #the function to multiply two numbers
-def add(x, y):
+def multiply(x, y):
     return x * y
 
 #the function to divide two numbers
-def add(x, y):
+def divide(x, y):
     return x / y
 
 #creating options
@@ -35,3 +35,15 @@ while True:
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
+
+        if choice == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif choice == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif choice == '3':
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif choice == '4':
+            print(num1, "/", num2, "=", divide(num1, num2))
