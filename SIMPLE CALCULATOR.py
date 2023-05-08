@@ -47,3 +47,9 @@ while True:
 
         elif choice == '4':
             print(num1, "/", num2, "=", divide(num1, num2))
+            
+        # check if user wants to try again
+        # exit if the answer is no
+        try_again = input("Let's do next calculation? (yes/no): ")
+        if try_again == "no":
+          break
