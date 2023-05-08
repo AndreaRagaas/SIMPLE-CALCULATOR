@@ -1,7 +1,7 @@
 #2022-09805-MN-0
 #RAGAAS, ANDREA 
 #BSCPE 1-5
-#
+#A program that can get the sum, difference, product, and quotient of two numbers.
 
 #creating the functions
 #the function to add two numbers
