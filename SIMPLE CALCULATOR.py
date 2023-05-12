@@ -77,3 +77,11 @@ operation_dropdown = tk.OptionMenu(root, operation_var, "Add", "Subtract", "Mult
 calculate_button = tk.Button(root, text="Calculate", command=lambda: [calculate(), ask_again()])
 result_label = tk.Label(root, text="Result:")
 
+#creating the layout of the widgets
+num1_label.grid(row=0, column=0, sticky="e")
+num1_entry.grid(row=0, column=1)
+num2_label.grid(row=1, column=0, sticky="e")
+num2_entry.grid(row=1, column=1)
+operation_dropdown.grid(row=2, column=0, columnspan=2, pady=5)
+calculate_button.grid(row=3, column=0, columnspan=2, pady=5)
+result_label.grid(row=4, column=0, columnspan=2)
