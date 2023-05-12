@@ -49,6 +49,18 @@ def divide():
     except ValueError:
         result_label.config(text="Invalid input, please try again")
 
+#the function to calculate with whatever operation the user will choose
+def calculate():
+    operation = operation_var.get()
+    if operation == "Add":
+        add()
+    elif operation == "Subtract":
+        subtract()
+    elif operation == "Multiply":
+        multiply()
+    elif operation == "Divide":
+        divide()
+
 #creating options
 print("CHOOSE AN OPERATION")
 print("1.ADD")
