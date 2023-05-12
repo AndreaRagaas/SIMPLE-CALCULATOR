@@ -5,20 +5,20 @@
 
 #creating the functions
 #the function to add two numbers
-def add(x, y):
-    return x + y
+def add(num_1, num_2):
+    return num_1 + num_2
 
 #the function to subtract two numbers
-def subtract(x, y):
-    return x - y
+def subtract(num_1, num_2):
+    return num_1 - num_2
 
 #the function to multiply two numbers
-def multiply(x, y):
-    return x * y
+def multiply(num_1, num_2):
+    return num_1 * num_2
 
 #the function to divide two numbers
-def divide(x, y):
-    return x / y
+def divide(num_1, num_2):
+    return num_1 / num_2
 
 #creating options
 print("CHOOSE AN OPERATION")
