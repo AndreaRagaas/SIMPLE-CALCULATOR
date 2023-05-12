@@ -8,20 +8,46 @@ import tkinter as tk
 
 #creating the functions
 #the function to add two numbers
-def add(num_1, num_2):
-    return num_1 + num_2
+def add():
+    try:
+        num1 = float(num1_entry.get())
+        num2 = float(num2_entry.get())
+        result = num1 + num2
+        result_label.config(text=result)
+    except ValueError:
+        result_label.config(text="Invalid input, please try again")
 
 #the function to subtract two numbers
-def subtract(num_1, num_2):
-    return num_1 - num_2
+def subtract():
+    try:
+        num1 = float(num1_entry.get())
+        num2 = float(num2_entry.get())
+        result = num1 - num2
+        result_label.config(text=result)
+    except ValueError:
+        result_label.config(text="Invalid input, please try again")
 
 #the function to multiply two numbers
-def multiply(num_1, num_2):
-    return num_1 * num_2
+def multiply():
+    try:
+        num1 = float(num1_entry.get())
+        num2 = float(num2_entry.get())
+        result = num1 * num2
+        result_label.config(text=result)
+    except ValueError:
+        result_label.config(text="Invalid input, please try again")
 
 #the function to divide two numbers
-def divide(num_1, num_2):
-    return num_1 / num_2
+def divide():
+    try:
+        num1 = float(num1_entry.get())
+        num2 = float(num2_entry.get())
+        result = num1 / num2
+        result_label.config(text=result)
+    except ZeroDivisionError:
+        result_label.config(text="Cannot divide by zero")
+    except ValueError:
+        result_label.config(text="Invalid input, please try again")
 
 #creating options
 print("CHOOSE AN OPERATION")
