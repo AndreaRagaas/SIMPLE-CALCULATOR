@@ -5,6 +5,7 @@
 
 #importing tkinter
 import tkinter as tk
+from tkinter import messagebox
 
 #creating the functions
 #the function to add two numbers
@@ -61,6 +62,17 @@ def calculate():
     elif operation == "Divide":
         divide()
 
+#creating an option if the user wants to do more calculations
+def ask_again():
+    answer = messagebox.askquestion("Another Calculation", "Do you want to perform another calculation?")
+    if answer == "yes":
+        result_label.config(text="Result:")
+        num1_entry.delete(0, "end")
+        num2_entry.delete(0, "end")
+    else:
+        messagebox.showinfo("Thank you", "Thank you for using the calculator!")
+        root.destroy()
+
 #creating the main window of the calculator
 root = tk.Tk()
 root.title("SIMPLE CALCULATOR")
@@ -85,3 +97,6 @@ num2_entry.grid(row=1, column=1)
 operation_dropdown.grid(row=2, column=0, columnspan=2, pady=5)
 calculate_button.grid(row=3, column=0, columnspan=2, pady=5)
 result_label.grid(row=4, column=0, columnspan=2)
+
+#run the main program
+root.mainloop()
