@@ -61,6 +61,10 @@ def calculate():
     elif operation == "Divide":
         divide()
 
+#creating the main window of the calculator
+root = tk.Tk()
+root.title("SIMPLE CALCULATOR")
+
 #creating options
 print("CHOOSE AN OPERATION")
 print("1.ADD")
