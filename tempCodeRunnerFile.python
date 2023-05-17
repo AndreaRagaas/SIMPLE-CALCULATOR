@@ -1,0 +1,23 @@
+from tv import TV
+
+class TestTV:
+    def __init__(self):
+        self.tv1 = TV()
+        self.tv2 = TV()
+
+    def run(self):
+        self.tv1.turnOn()
+        self.tv1.setChannel(30)
+        self.tv1.setVolume(3)
+
+        self.tv2.turnOn()
+        self.tv2.setChannel(3)
+        self.tv2.setVolume(2)
+
+        print("tv1's channel is", self.tv1.getChannel(), "and volume level is", self.tv1.getVolume())
+        print("tv2's channel is", self.tv2.getChannel(), "and volume level is", self.tv2.getVolume())
+
+
+# Create an instance of TestTV and run the test
+test = TestTV()
+test.run()
